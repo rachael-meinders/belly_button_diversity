@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
 </head>
 
 <body>
@@ -15,7 +16,8 @@
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
         <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <h4>In an effort to find a more sustainable alternative to beef, Improbable Beef has teamed up with a microbiolog labratory to study bacteria, searching for species that are able to synthesize proteins that taste like beef. A promising microorgamism was found inside a human belly button. To explore this possibility, samples of people across the country were tested, and the results are visualized below.</h4>
+        <h3>Use the interactive charts below to explore the dataset</h3>
       </div>
     </div>
     <div class="row">
@@ -33,15 +35,21 @@
         </div>
       </div>
       <div class="col-md-5">
-        <div id="bar"></div>
+        <div id="bar">
+          <p>This bar chart displays the top 10 most abundant bacterial species (OTUs) for the selected test subject.</p>
+        </div>
       </div>
       <div class="col-md-5">
-        <div id="gauge"></div>
+        <div id="gauge">
+          <p>This gauge chart displays the weekly belly button washing frequency or the selected test subject.</p>
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
+      <div class="col-md-13">
+        <div id="bubble">
+          <p>This bubble chart displays the abundance of each bacterial species for the selected test subject.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -49,6 +57,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="plots.js"></script>
+  <script src="charts.js"></script>
+  <script src="static/css/style.css"></script>
 
 </body>
 
